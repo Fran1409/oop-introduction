@@ -24,5 +24,6 @@ USE TYPEHINTING EVERYWHERE!
 */
 
 echo $duvel->getAlcoholpercentage().'<br>';
+print_r($duvel->getAlcoholpercentage().'<br>');
 echo $duvel->color.'<br>';
 echo $duvel->getInfo();
