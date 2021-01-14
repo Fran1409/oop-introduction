@@ -23,7 +23,6 @@ Try to get this error on the screen= Fatal error: Uncaught Error: Call to undefi
 USE TYPEHINTING EVERYWHERE!
 */
 
-$duvel = new Beer('Duvel', 8.5, 'blond', 3.5);
 echo $duvel->getAlcoholpercentage().'<br>';
 echo $duvel->color.'<br>';
 echo $duvel->getInfo();

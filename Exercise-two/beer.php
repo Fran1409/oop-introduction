@@ -24,3 +24,4 @@ class Beer extends Beverage
     }
 }
 
+$duvel = new Beer('Duvel', 8.5, 'blond', 3.5);
