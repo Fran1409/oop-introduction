@@ -24,18 +24,18 @@ class Beverage
     var $price;
     var $temperature;
 
-    function __construct($color, $price, $temperature = 'cold') {
+    function __construct(string $color, float $price, string $temperature = 'cold') {
         $this->color = $color;
         $this->price = $price;
         $this->temperature = $temperature;
     }
 
-    function getInfo() {
+    function getInfo() :string {
         return 'This beverage is '. $this->temperature .' and '. $this->color .'.';
     }
 }
 
-$cola = new Beverage('black','2.0');
+$cola = new Beverage('black', 2);
 echo $cola->getInfo();
 echo '<br>Temperature: '. $cola->temperature;
 
