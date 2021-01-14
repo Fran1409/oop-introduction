@@ -24,10 +24,10 @@ class Beverage
     var $price;
     var $temperature;
 
-    function __construct($color, $price, $temperature = 'cold') {
+    function __construct($color, $price, $temperature) {
         $this->color = $color;
         $this->price = $price;
-        $this->temperature = $temperature;
+        $this->temperature = $temperature = 'cold';
     }
 
     function getInfo() {
