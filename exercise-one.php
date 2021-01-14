@@ -24,10 +24,10 @@ class Beverage
     var $price;
     var $temperature;
 
-    function __construct($color, $price, $temperature) {
+    function __construct($color, $price, $temperature = 'cold') {
         $this->color = $color;
         $this->price = $price;
-        $this->temperature = $temperature = 'cold';
+        $this->temperature = $temperature;
     }
 
     function getInfo() {
@@ -35,7 +35,7 @@ class Beverage
     }
 }
 
-$cola = new Beverage('black','2.0','');
+$cola = new Beverage('black','2.0');
 echo $cola->getInfo();
 
     
