@@ -20,9 +20,9 @@ USE TYPEHINTING EVERYWHERE!
 
 class Beverage 
 {
-    var $color;
-    var $price;
-    var $temperature;
+    public $color;
+    public $price;
+    public $temperature;
 
     function __construct(string $color, float $price, string $temperature = 'cold') {
         $this->color = $color;
